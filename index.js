@@ -49,5 +49,3 @@ const timer = new CountdownTimer({
   selector: '#timer-1',
   targetDate: new Date('August 13, 2021, 00:00'),
 });
-
-// timer.renderTimer();
