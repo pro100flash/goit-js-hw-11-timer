@@ -9,6 +9,7 @@ class CountdownTimer {
       secs: document.querySelector(`${selector} [data-value="secs"]`),
       timerFace: document.querySelector('#timer-1'),
     };
+    this.renderTimer();
   }
 
   renderTimer() {
@@ -49,4 +50,4 @@ const timer = new CountdownTimer({
   targetDate: new Date('August 13, 2021, 00:00'),
 });
 
-timer.renderTimer();
+// timer.renderTimer();
