@@ -7,7 +7,7 @@ class CountdownTimer {
       hours: document.querySelector(`${selector} [data-value="hours"]`),
       mins: document.querySelector(`${selector} [data-value="mins"]`),
       secs: document.querySelector(`${selector} [data-value="secs"]`),
-      timerFace: document.querySelector('#timer-1'),
+      timerFace: document.querySelector("#timer-1"),
     };
     this.renderTimer();
   }
@@ -31,7 +31,7 @@ class CountdownTimer {
     const days = pad(Math.floor(time / (1000 * 60 * 60 * 24)));
 
     const hours = pad(
-      Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     );
     const mins = pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
 
@@ -42,10 +42,10 @@ class CountdownTimer {
 }
 
 function pad(value) {
-  return String(value).padStart(2, '0');
+  return String(value).padStart(2, "0");
 }
 
 const timer = new CountdownTimer({
-  selector: '#timer-1',
-  targetDate: new Date('August 13, 2021, 00:00'),
+  selector: "#timer-1",
+  targetDate: new Date("Oktober 24, 2022, 00:00"),
 });
