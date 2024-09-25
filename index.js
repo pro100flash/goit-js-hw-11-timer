@@ -47,5 +47,5 @@ function pad(value) {
 
 const timer = new CountdownTimer({
   selector: "#timer-1",
-  targetDate: new Date("March 24, 2022, 00:00"),
+  targetDate: new Date("August 13, 2025, 20:45"),
 });
